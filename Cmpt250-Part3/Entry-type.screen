@@ -1,0 +1,87 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="12.0.0.8"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                Id="0b236613-8f48-4c2d-bf81-8da093ddc832">
+    <Page.Content>
+        <Content Width="375" Height="647" Id="3a39f1dd-2cd6-4107-854b-e3bbbc45b74d">
+            <Content.Layers>
+                <Layer Id="42967e62-acd6-42a5-9122-495a9415c492" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="0c34f80a-2056-42ce-9ef6-7f347ecc30db" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="375,647" Id="55a0a44e-224e-4a2a-bf97-6900f113f4cd" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="4cc369e0-f1b7-4bb5-8988-e0f2ae0ff4a7" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="12/01/2018 01:20:50" Id="1a976031-9398-4488-b784-6f09c5af9747">
+            <Scene.KeyFrames>
+                <KeyFrame Id="1fed2768-d469-4ef4-b8c9-2cfa09e62c68">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="42967e62-acd6-42a5-9122-495a9415c492">
+                            <Add.Item>
+                                <i:Header Text="Entry-type" Foreground="#FF84312F" FontSize="16" FontFamily="Open Sans" Id="2e3d4ed7-b6aa-4d8b-b41d-f131961d7490" Panel.Bounds="0,0,375{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="42967e62-acd6-42a5-9122-495a9415c492">
+                            <Add.Item>
+                                <i:NavigationButton Text="Back" Foreground="#FF84312F" FontFamily="Open Sans" Id="20941335-af6c-4bba-944e-3c1d54a30cb9" Panel.Bounds="5,12,68{40,2147483647},5*{5,2147483647}">
+                                    <i:NavigationButton.Click>
+                                        <CommandBack AnimateLastStateOnScreen="True" Created="12/01/2018 01:34:40" Id="720be823-8305-41fc-82cf-08aa0e6cab22" />
+                                    </i:NavigationButton.Click>
+                                </i:NavigationButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="42967e62-acd6-42a5-9122-495a9415c492">
+                            <Add.Item>
+                                <Image SourcePath="assets/notepad-117597__340.png" DevicePixelRatio="0.5" Id="471e4f5e-804e-45de-ada0-a34f62781121" Panel.Bounds="25,146,100{5,2147483647},100{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="42967e62-acd6-42a5-9122-495a9415c492">
+                            <Add.Item>
+                                <i:Title RichText="How would you like to enter your data?" Foreground="#FF84312F" FontSize="16" FontFamily="Open Sans" Id="cea09994-f2b7-4083-8a81-b4ec50f05032" Panel.Bounds="25,86,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="42967e62-acd6-42a5-9122-495a9415c492">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="Manually" Foreground="#FF84312F" FontSize="18" FontFamily="Open Sans" Id="1ee0a04f-90f5-43e1-8e43-0cdbc818b6a1" Panel.Bounds="157,174,184{25,2147483647},44*{44,2147483647}">
+                                    <i:ActionSheetButton.Click>
+                                        <CommandNavigate Screen="/Manual Log Entry.screen" Created="12/01/2018 21:00:24" Id="ad45a61d-6ee2-47f5-993b-6e207669ff10">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </i:ActionSheetButton.Click>
+                                </i:ActionSheetButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="42967e62-acd6-42a5-9122-495a9415c492">
+                            <Add.Item>
+                                <Image SourcePath="assets/bluetooth-icon-15.png" DevicePixelRatio="0.5" Id="8b2cb953-78ae-4208-95c3-12209b602534" Panel.Bounds="25,297,100{5,2147483647},100{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="42967e62-acd6-42a5-9122-495a9415c492">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="Via External Device" Foreground="#FF84312F" FontSize="18" FontFamily="Open Sans" Id="ec955d0d-c3c9-4f83-b9c6-4aecef97f30e" Panel.Bounds="156,325,184{25,2147483647},44*{44,2147483647}">
+                                    <i:ActionSheetButton.Click>
+                                        <CommandNavigate Screen="/External-Device Entry.screen" Created="12/01/2018 01:53:27" Id="65169819-72a2-431d-9a71-b30eafe76108">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </i:ActionSheetButton.Click>
+                                </i:ActionSheetButton>
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

@@ -1,0 +1,36 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="12.0.0.8"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                Id="745423e1-0bd3-494c-9552-434d8c74126c">
+    <Page.Content>
+        <Content Width="375" Height="647" Id="8acb7e13-79da-41a2-9886-35adfa713d4e">
+            <Content.Layers>
+                <Layer Id="8f6584ef-c81b-4031-8ec4-0f189ebad499" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="12806771-ff26-4636-ba12-5162b417e21c" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="375,647" Id="06b9de91-b73d-47e6-a519-2ce2993ea0e8" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="0d5b6efb-e2c1-43d9-9fc7-5923a6692541" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="12/03/2018 17:05:22" Id="7cf60c76-3885-4096-ba64-302bab14b42e">
+            <Scene.KeyFrames>
+                <KeyFrame Id="849bf7f4-e1ff-403e-88e1-245ce1eb3824">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="8f6584ef-c81b-4031-8ec4-0f189ebad499">
+                            <Add.Item>
+                                <Image SourcePath="assets/Emilie-Screen.png" DevicePixelRatio="0.5" Crop="Size:[375,647],Rect:[0,25,375,622]" Id="982d9afb-3f04-4828-a630-61e2465ad008" Panel.Bounds="0,0,375{5,2147483647},647{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

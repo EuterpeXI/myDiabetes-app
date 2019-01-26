@@ -1,0 +1,190 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="12.0.0.8"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                xmlns:d="http://prototypes.infragistics.com/views/design"
+                                                                                xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                Id="1de3aaeb-d027-4fe9-9921-d879cc5b02ac" d:Design.ShowOpeningAnimation="True">
+    <Page.Content>
+        <Content Width="375" Height="647" Id="c6727843-67e3-4a73-b5ea-206e7ce68345">
+            <Content.Layers>
+                <Layer Id="565b89af-bcdf-4f17-b5d6-11ff564247ab" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="a6db19d8-ad05-4c7d-94aa-b07a7ff8ff36" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="375,647" Id="268d270d-73e9-411e-a402-beaf08ae3a9e" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="edda8b42-e6bd-4b57-817a-c6566b02c798" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="12/02/2018 08:20:30" Id="e4bc65f8-0f94-4fe2-95c0-aebc962b17a3">
+            <Scene.KeyFrames>
+                <KeyFrame Duration="250" Id="d22bc851-e95b-4484-af15-75dd23b73897">
+                    <KeyFrame.Operations>
+                        <Add Property="GuidesInfo.Guides" Target="edda8b42-e6bd-4b57-817a-c6566b02c798">
+                            <Add.Item>
+                                <Guide Position="12" Id="0ba90a39-5188-4cba-97cf-f1fbfd78bf77" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="GuidesInfo.Guides" Target="edda8b42-e6bd-4b57-817a-c6566b02c798">
+                            <Add.Item>
+                                <Guide Position="58" Id="073b0581-cdf9-4fec-a339-f20f48104bf5" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <i:Header Text="Re-confirm Entry" Foreground="#FF84312F" FontSize="16" FontFamily="Open Sans" Id="b52c7222-dc14-4bac-88c0-12dde834c2ee" Panel.Bounds="0,0,375{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <i:NavigationButton Text="Back" Foreground="#FF84312F" FontFamily="Open Sans" Id="4e0fa35b-aee0-481c-921b-671bd683bdf6" Panel.Bounds="5,12,68{40,2147483647},5*{5,2147483647}">
+                                    <i:NavigationButton.Click>
+                                        <CommandNavigate Screen="/External-Device Entry.screen" Created="12/02/2018 08:58:53" Id="edba0bd5-ff22-4765-a9f2-7be485587bfd">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </i:NavigationButton.Click>
+                                </i:NavigationButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="Confirm" Foreground="#FF84312F" FontFamily="Open Sans" Id="c7823a56-7ef6-406b-9276-fc858b70ae9e" Panel.Bounds="12,591,351{25,2147483647},44*{44,2147483647}">
+                                    <i:ActionSheetButton.Click>
+                                        <CommandNavigate Screen="/Home.screen" Created="12/02/2018 08:27:42" Id="dfad2278-dfef-42c4-bd44-1ff27b05f553">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </i:ActionSheetButton.Click>
+                                </i:ActionSheetButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <ContainerBox Color="#FF000000" Id="b8c84b40-9179-4bd6-9c45-ea38a6b1567b" Panel.Bounds="0,103,375{5,2147483647},475{5,2147483647}" Viewbox.ContentHeight="678">
+                                    <ContainerBox.Content>
+                                        <Container ClipToContainer="True" Id="91e129a0-31da-446d-a83c-1b857c36afbf">
+                                            <Container.Children>
+                                                <i:Picker Foreground="#FF84312F" Id="e3f32aed-2e4f-4de0-b707-92aff22f7c18" Name="Log Category Picker" Panel.Bounds="174,110,165{5,2147483647},22{5,2147483647}">
+                                                    <i:Picker.Items>
+                                                        <i:PickerItem Text="Default" Id="3b4212ce-96c0-4120-99bb-863417b84249" />
+                                                        <i:PickerItem Text="Glucose levels and more" IsSelected="True" Id="936fa3ee-10a3-4163-a78f-9a3efe6805fc" />
+                                                        <i:PickerItem Text="-Add new category-" Id="4dabb265-bc10-429e-9c80-ae7a65b01d7d" />
+                                                    </i:Picker.Items>
+                                                </i:Picker>
+                                                <i:Label RichText="Log Entry Type:" Foreground="#FF84312F" FontFamily="Open Sans" Id="709eb656-a4e1-43b6-9849-4f322ece2a28" Name="Log Entry Type" Panel.Bounds="58,110,103{5,2147483647},22{5,2147483647}" />
+                                                <i:Label RichText="Category:" Foreground="#FF84312F" FontFamily="Open Sans" Id="abfb8e12-8631-4138-b6d7-1e31ce3c6966" Name="Category" Panel.Bounds="58,63,65{5,2147483647},22{5,2147483647}" />
+                                                <i:Picker Foreground="#FF84312F" Id="63351085-521a-4369-a15b-6b89493e568d" Panel.Bounds="174,63,74{5,2147483647},22{5,2147483647}">
+                                                    <i:Picker.Items>
+                                                        <i:PickerItem Text="Before breakfast" Id="70b3ee66-44d2-4f3f-afc6-f0b4dab5d45d" />
+                                                        <i:PickerItem Text="Breakfast" Id="80604c12-dc9f-4736-a045-cd966eef98c0" />
+                                                        <i:PickerItem Text="After breakfast" Id="c58b9d7b-67c0-436d-8fc2-e5dc83522f87" />
+                                                        <i:PickerItem Text="Before lunch" Id="04ef6148-687b-4b17-9ea2-069c390d152b" />
+                                                        <i:PickerItem Text="Lunch" Id="14ef88f9-36b4-46fd-9fae-21e06c40d85a" />
+                                                        <i:PickerItem Text="After lunch" IsSelected="True" Id="8633e6d9-fa78-4362-b660-d2f09a8436c4" />
+                                                        <i:PickerItem Text="Before dinner" Id="3aadec03-a511-4cce-94e4-7066dbeded55" />
+                                                        <i:PickerItem Text="Dinner" Id="3d7c9c36-56c4-40c7-9ee7-5ed7fa70adf1" />
+                                                        <i:PickerItem Text="After dinner" Id="3ea57a1b-3340-4323-8425-cacb9e76d544" />
+                                                        <i:PickerItem Text="Before bed" Id="1fe09410-7550-4461-a105-05e3ada1fc60" />
+                                                        <i:PickerItem Text="Before exercise" Id="988dfe2a-49f4-4b46-a1e2-42b250b12aed" />
+                                                        <i:PickerItem Text="After exercise" Id="c60e8587-c83d-44be-8eaf-36d5c433c99b" />
+                                                        <i:PickerItem Text="Snack" Id="41e9e85f-ce01-4366-b35c-11ad8cb4da71" />
+                                                        <i:PickerItem Text="Other" Id="7cee5ec4-79fd-4970-b741-f19e6c864c8a" />
+                                                    </i:Picker.Items>
+                                                </i:Picker>
+                                                <Image SourcePath="assets/blood-drop-medicine-red-512.png" DevicePixelRatio="0.5" Id="e7575aee-f945-4ed8-8ca8-09f39c865722" Panel.Bounds="11,159,31{5,2147483647},32{5,2147483647}" />
+                                                <i:TextField Text="125.3452" WatermarkText="Glucose" Foreground="#FF84312F" FontFamily="Open Sans" Id="4a000d39-1ca9-4400-ab2c-4a5719281558" Panel.Bounds="57,159,156{22,2147483647},5*{5,2147483647}" />
+                                                <i:Picker Foreground="#FF84312F" Id="cea8c05a-d55a-4268-a533-bed85c4bfb34" Panel.Bounds="221,164,43{5,2147483647},22{5,2147483647}">
+                                                    <i:Picker.Items>
+                                                        <i:PickerItem Text="mg/dL" IsSelected="True" Id="d8fa6763-82c7-45e2-9a19-c0b1acae1f10" />
+                                                        <i:PickerItem Text="mmol/L" Id="7784f631-63c3-4c97-bbd1-448cc58d055d" />
+                                                    </i:Picker.Items>
+                                                </i:Picker>
+                                                <Image SourcePath="assets/bloodpressure.png" DevicePixelRatio="0.5" Id="403ac367-813b-41a5-89d7-6cebd7dc8cf5" Panel.Bounds="11,215,31{5,2147483647},32{5,2147483647}" />
+                                                <i:TextField Text="113" WatermarkText="Systolic Pressure" Foreground="#FF84312F" FontFamily="Open Sans" Id="b6547a02-7b39-41b3-a9d1-bdcba8253c9d" Panel.Bounds="57,215,156{22,2147483647},5*{5,2147483647}" />
+                                                <i:TextField Text="76" WatermarkText="Diastolic Pressure" Foreground="#FF84312F" FontFamily="Open Sans" Id="db25130a-84aa-4aa7-a4e4-f955f57a4ce5" Panel.Bounds="57,252,156{22,2147483647},5*{5,2147483647}" />
+                                                <i:Label RichText="mm Hg" Foreground="#FF84312F" FontFamily="Open Sans" Id="f6442387-7d1f-4024-8818-82240fe5a9b7" Panel.Bounds="221,221,49{5,2147483647},22{5,2147483647}" />
+                                                <i:Label RichText="mm Hg" Foreground="#FF84312F" FontFamily="Open Sans" Id="050151bf-ca58-44a6-94a6-824e72f298e8" Panel.Bounds="221,257,49{5,2147483647},22{5,2147483647}" />
+                                                <i:TextField Text="67" WatermarkText="Measured Arm" Foreground="#FF84312F" FontFamily="Open Sans" Id="176c4b88-fcf3-4af0-9c12-390b0e8bc9c3" Panel.Bounds="57,289,156{22,2147483647},5*{5,2147483647}" />
+                                                <Image SourcePath="assets/buttons_WELL_Dinner_Plate.png" DevicePixelRatio="0.5" Id="b6c4f8bb-c0dd-4054-b2ce-699538ae4ee1" Panel.Bounds="11,338,31{5,2147483647},32{5,2147483647}" />
+                                                <i:TextField Text="150" WatermarkText="Carbs" Foreground="#FF84312F" FontFamily="Open Sans" Id="0cd62550-0f28-4d11-b502-1f697875a447" Panel.Bounds="57,338,156{22,2147483647},5*{5,2147483647}" />
+                                                <i:Label RichText="grams" Foreground="#FF84312F" FontFamily="Open Sans" Id="e5f8b690-bf44-446f-bd7b-ff3a89a962b0" Panel.Bounds="221,344,42{5,2147483647},22{5,2147483647}" />
+                                                <i:TextField Text="200" WatermarkText="Proteins" Foreground="#FF84312F" FontFamily="Open Sans" Id="e514fd3c-35c6-4131-8216-670296656dde" Panel.Bounds="57,375,156{22,2147483647},5*{5,2147483647}" />
+                                                <i:Label RichText="kcal" Foreground="#FF84312F" FontFamily="Open Sans" Id="5344b39e-8a11-4f61-9d88-c1b7d3b3ff7b" Panel.Bounds="221,417,27{5,2147483647},22{5,2147483647}" />
+                                                <i:TextField Text="1115" WatermarkText="Calories" Foreground="#FF84312F" FontFamily="Open Sans" Id="325d1901-e47f-4854-9b84-df5f9b334c9d" Panel.Bounds="57,412,156{22,2147483647},5*{5,2147483647}" />
+                                                <i:Label RichText="grams" Foreground="#FF84312F" FontFamily="Open Sans" Id="2117ac6e-8c39-43bc-b95c-c42df019cdb9" Panel.Bounds="221,380,42{5,2147483647},22{5,2147483647}" />
+                                                <Icon Color="#FF84312F" CatalogId="la-tag" Id="f22211d3-81c5-4413-92a3-5cc2533af5ea" Panel.Bounds="12,56,33{5,2147483647},33{5,2147483647}" />
+                                                <Icon Color="#FF84312F" CatalogId="la-file" Id="2cb0b206-12ff-423b-a612-1e30da37cde5" Panel.Bounds="12,104,31{5,2147483647},31{5,2147483647}" />
+                                                <Icon Color="#FF84312F" CatalogId="fa-picture-o" Id="998e4a51-d13e-4808-9eae-572d211ac2dc" Panel.Bounds="12,461,31{5,2147483647},31{5,2147483647}" />
+                                                <Icon Color="#FF84312F" CatalogId="fa-sticky-note-o" Id="2fba2444-df4e-4215-8804-80bdc383de8f" Panel.Bounds="12,519,31{5,2147483647},31{5,2147483647}" />
+                                                <i:TextArea Text="Ate steak and unsalted french fries." WatermarkText="Enter additional notes here" Foreground="#FF84312F" FontFamily="Open Sans" Id="47f04744-01f7-423d-8dbc-cce84a94c1a4" Panel.Bounds="59,519,274{22,2147483647},145{31,2147483647}" />
+                                                <Icon Color="#FF84312F" CatalogId="la-plus-circle" Id="ca3dd8e3-8023-45e3-906d-9caecd35a107" Panel.Bounds="58,462,30{5,2147483647},30{5,2147483647}" />
+                                                <i:Label RichText="Add Photo" Foreground="#FF84312F" FontFamily="Open Sans" Id="cd66a8dd-2b80-4701-b1af-71820359f758" Panel.Bounds="96,468,5*{5,2147483647},5*{5,2147483647}" />
+                                                <Icon Color="#FF84312F" CatalogId="fa-bluetooth" Id="c7173824-98f7-464e-9d82-5cfe93f84836" Panel.Bounds="12,12,33{5,2147483647},33{5,2147483647}" />
+                                                <i:Label RichText="&lt;Run FontSize=&quot;13&quot; &gt;iHealth Smart - Wireless Glucose-Monitoring Sys...&lt;/Run&gt;" Foreground="#FF84312F" FontSize="14" FontFamily="Open Sans" Id="c69c2428-d4bc-48d3-ac28-cd03f7e2512a" Panel.Bounds="57,19,5*{5,2147483647},5*{5,2147483647}" />
+                                            </Container.Children>
+                                        </Container>
+                                    </ContainerBox.Content>
+                                </ContainerBox>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <i:Label RichText="Date and Time:" Foreground="#FF84312F" FontFamily="Open Sans" Id="a3ce497f-4410-4209-bcaf-9238a607cea3" Panel.Bounds="59,59,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <i:DatePicker DateTime="11/30/2018 14:40:00" Foreground="#FF84312F" FontFamily="Open Sans" Id="5babc40b-c885-4f41-af8e-089ababbc818" Panel.Bounds="173,59,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <Icon Color="#FF84312F" CatalogId="fa-calendar" Id="a607a793-e8da-4c87-965e-f43bf0f98351" Panel.Bounds="12,53,32{5,2147483647},32{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <ContainerBox Opacity="0" Id="dbf1334b-5f0c-4b01-aecd-ea5d8fd890f1" Panel.Bounds="124,63,251{5,2147483647},111{5,2147483647}">
+                                    <ContainerBox.Content>
+                                        <Container ClipToContainer="True" Id="d8f78018-5462-41be-a859-ed5e3fa488bd">
+                                            <Container.Children>
+                                                <Image SourcePath="assets/thumbs-up-boy-clipart-10.png" DevicePixelRatio="0.5" Id="ca65d7de-66f7-4b64-9f92-9b9b8f3e6e73" Panel.Bounds="10,8,60{5,2147483647},0*{5,2147483647}" />
+                                                <i:Label RichText="Those numbers are looking awesome! &#xD;&#xA;Keep up the good work!" Foreground="#FF84312F" FontFamily="Open Sans" Id="6fc8dcf0-c90c-45d5-be96-a3ad8f4062f1" Panel.Bounds="78,21,157{5,2147483647},61{5,2147483647}" />
+                                            </Container.Children>
+                                        </Container>
+                                    </ContainerBox.Content>
+                                </ContainerBox>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="565b89af-bcdf-4f17-b5d6-11ff564247ab">
+                            <Add.Item>
+                                <i:Label RichText="Changes can be made on the field directly" Foreground="#FF84312F" FontSize="12" FontFamily="Open Sans" Id="0b07d72c-4a74-47f5-a1fb-cd5e3d5adc20" Panel.Bounds="135,85,235{5,2147483647},17*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+                <KeyFrame Duration="4250" Id="050d9f62-f1bd-4ac8-9007-c49f06569b48">
+                    <KeyFrame.Operations>
+                        <Set Property="Control.Opacity" Value="1" Target="dbf1334b-5f0c-4b01-aecd-ea5d8fd890f1" StartTimeMilliseconds="250" />
+                        <Move Top="True" Target="dbf1334b-5f0c-4b01-aecd-ea5d8fd890f1" StartTimeMilliseconds="250" />
+                        <Set Property="Control.Effect" Value="Slide,Left" Target="dbf1334b-5f0c-4b01-aecd-ea5d8fd890f1" StartTimeMilliseconds="250" Duration="400" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+                <KeyFrame Duration="250" Id="1740952c-71d4-4f46-9fd5-9a8f51b227ce">
+                    <KeyFrame.Operations>
+                        <Set Property="Control.Opacity" Value="0" Target="dbf1334b-5f0c-4b01-aecd-ea5d8fd890f1" StartTimeMilliseconds="4500" />
+                        <Move Before="b52c7222-dc14-4bac-88c0-12dde834c2ee" Target="dbf1334b-5f0c-4b01-aecd-ea5d8fd890f1" StartTimeMilliseconds="4500" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

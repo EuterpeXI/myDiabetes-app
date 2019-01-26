@@ -1,0 +1,128 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="12.0.0.8"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                Id="f7aeed85-d5b8-47e0-b14e-66468933deb3">
+    <Page.Content>
+        <Content Width="375" Height="647" Id="97754fb4-6fa1-4cd7-81cc-b465f2591d50">
+            <Content.Layers>
+                <Layer Id="72001bb3-37f4-4e4a-975e-febaea99c168" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="56587a12-afaa-4fec-878a-50a426c9972e" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="375,647" Id="1514656e-2457-4dab-8cab-a5af40d024c8" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="3284ac42-091a-4843-8c7a-21aa26684271" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="12/02/2018 05:03:38" Id="decab680-2435-498b-af4f-b00746e8031a">
+            <Scene.KeyFrames>
+                <KeyFrame Id="d67439a9-aa29-4f79-99c5-8692366aaa02">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <i:Header Text="Export to PDF" Foreground="#FF84312F" FontSize="16" FontFamily="Open Sans" Id="b36f2fd2-89f2-401b-bb52-e991b662fd02" Panel.Bounds="0,0,375{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <i:NavigationButton Text="Back" Foreground="#FF84312F" FontFamily="Open Sans" Id="734aa541-1c99-48f1-ada5-a6b818b3c52e" Panel.Bounds="5,12,68{40,2147483647},5*{5,2147483647}">
+                                    <i:NavigationButton.Click>
+                                        <CommandNavigate Screen="/Logpage.screen" Created="12/02/2018 08:59:41" Id="f3a43cfb-25ae-4f41-bfcf-1666f9d41cae">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </i:NavigationButton.Click>
+                                </i:NavigationButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <i:Title RichText="Send as email? &lt;Run FontSize=&quot;12&quot; &gt;(Optional)&lt;/Run&gt;" Foreground="#FF84312F" FontFamily="Open Sans" Id="70f7bb09-5ab0-4744-bb57-9b8f28f580b2" Panel.Bounds="13,60,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <i:TextField WatermarkText="Enter email" FontFamily="Open Sans" Id="6c7711a2-2a7e-41a9-ba23-2b4ac94ea441" Panel.Bounds="13,90,308{22,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="GuidesInfo.Guides" Target="3284ac42-091a-4843-8c7a-21aa26684271">
+                            <Add.Item>
+                                <Guide Position="13" Id="7245dd9a-cafa-46ca-8cca-54113c8aa2e1" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="Create" Foreground="#FF84312F" FontFamily="Open Sans" Id="c67dc618-2eb7-4d8f-9b79-831c68bf5aee" Panel.Bounds="13,201,350{25,2147483647},44*{44,2147483647}">
+                                    <i:ActionSheetButton.Click>
+                                        <CommandSwitchTo SceneId="5eff58f3-5ecf-45e9-95af-76a4621768fd" Created="12/02/2018 05:43:16" Id="dfd65e3f-be5d-4bba-98e4-1202679c694f" />
+                                    </i:ActionSheetButton.Click>
+                                </i:ActionSheetButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <i:Label RichText="A copy of the PDF file will be saved onto the device. If an email was provided, a copy of the PDF will be sent." Align="Center" Foreground="#FF84312F" FontFamily="Open Sans" Id="132f03e9-cde8-4191-aecc-9fc5e6070c31" Panel.Bounds="13,139,350{5,2147483647},20*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <i:ActivityIndicator Opacity="0" Id="a9db854c-f380-43b8-b6e4-4c95805184b7" Panel.Bounds="170,258,35{20,2147483647},35{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Before="b36f2fd2-89f2-401b-bb52-e991b662fd02" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <Icon Color="#FF48C157" CatalogId="fa-check" Opacity="0" Id="83214798-107a-4317-a5a7-d8faff31024c" Panel.Bounds="172,259,32{5,2147483647},32{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="72001bb3-37f4-4e4a-975e-febaea99c168">
+                            <Add.Item>
+                                <i:Label RichText="Done!" Foreground="#FF84312F" FontFamily="Open Sans" Opacity="0" Id="7f65720a-3c56-4b06-988b-17a3c6243eb4" Panel.Bounds="170,294,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+        <Scene Title="Tapped Create" StateGroup="decab680-2435-498b-af4f-b00746e8031a" ParentScene="decab680-2435-498b-af4f-b00746e8031a" Created="12/02/2018 05:43:16" Id="5eff58f3-5ecf-45e9-95af-76a4621768fd">
+            <Scene.KeyFrames>
+                <KeyFrame Duration="1000" Id="64846195-04ac-4a6a-a1af-ff89eb1a87eb">
+                    <KeyFrame.Operations>
+                        <Set Property="Control.Opacity" Value="1" Target="a9db854c-f380-43b8-b6e4-4c95805184b7" Duration="1000" />
+                        <Add Property="Content.SceneApplied" Target="97754fb4-6fa1-4cd7-81cc-b465f2591d50">
+                            <Add.Item>
+                                <ConditionalCommand Id="3fe99b39-23c5-48da-ba1d-693797427c9f">
+                                    <ConditionalCommand.Command>
+                                        <CommandNavigate Screen="/Logpage.screen" Created="12/02/2018 05:45:58" Id="443e4946-996b-473e-975e-16322e993518">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </ConditionalCommand.Command>
+                                    <ConditionalCommand.Condition>
+                                        <SceneCondition Scene="5eff58f3-5ecf-45e9-95af-76a4621768fd" />
+                                    </ConditionalCommand.Condition>
+                                </ConditionalCommand>
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+                <KeyFrame Duration="1650" Id="cc9caf4a-23db-4c33-8d0a-b53b2e909e2b">
+                    <KeyFrame.Operations>
+                        <Set Property="Control.Opacity" Value="0" Target="a9db854c-f380-43b8-b6e4-4c95805184b7" StartTimeMilliseconds="1000" />
+                        <Set Property="Control.Opacity" Value="1" Target="83214798-107a-4317-a5a7-d8faff31024c" StartTimeMilliseconds="1000" Duration="1650" />
+                        <Set Property="Control.Opacity" Value="1" Target="7f65720a-3c56-4b06-988b-17a3c6243eb4" StartTimeMilliseconds="1000" />
+                        <Set Property="Label.RichText" Value="Done! Returning to log..." Target="7f65720a-3c56-4b06-988b-17a3c6243eb4" StartTimeMilliseconds="1000" />
+                        <Move To="120,294" Target="7f65720a-3c56-4b06-988b-17a3c6243eb4" StartTimeMilliseconds="1000" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

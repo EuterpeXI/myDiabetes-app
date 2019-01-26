@@ -1,0 +1,11 @@
+﻿<?Infragistics.Models format="xaml" version="4" appVersion="12.0.0.8"?>
+<Project xmlns="http://prototypes.infragistics.com/"
+                                                                                  Id="JFWYK7KS4IEE" StartScreens="/Phone Notification.screen" IndigoVersion="12" RecentColors="#FF84312F,#FFAAAAAA,#FF000000,#00FFFFFF,#FF48C157,#FF38A1F3,#FF5FB5CC,#FF275B9D,#FF1C416F,#FFE2E2E2" LastUsedFonts="Open Sans,Source Sans Pro,Arial,Roboto,Noto Sans JP">
+    <Project.Defaults>
+        <ProjectDefaults Viewport="375,647">
+            <ProjectDefaults.Device>
+                <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+            </ProjectDefaults.Device>
+        </ProjectDefaults>
+    </Project.Defaults>
+</Project>

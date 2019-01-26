@@ -1,0 +1,282 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="12.0.0.8"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                Id="2a7c1bb9-4a10-49f3-a3e1-76796a3a1930">
+    <Page.Content>
+        <Content Width="375" Height="647" Id="47e1724b-4324-42cf-b255-6109f2ffc50f">
+            <Content.Layers>
+                <Layer Id="17f9500d-95ac-40b9-9a5f-82c63a3d06b0" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="ca76025e-3bd2-451f-9f16-b86d5d8a924d" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="375,647" Id="84ad3827-3d32-4ec9-9b22-2f51e290fb0b" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="12091b3b-d1e1-4a75-9308-714483231a6c" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="12/01/2018 21:06:41" Id="1571b794-5b63-4dba-8543-a684365ccb35">
+            <Scene.KeyFrames>
+                <KeyFrame Id="73543a01-f2f6-4689-a19f-393b7c9ec316">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="17f9500d-95ac-40b9-9a5f-82c63a3d06b0">
+                            <Add.Item>
+                                <i:Header Text="Logbook" Foreground="#FF84312F" FontSize="16" FontFamily="Open Sans" Id="7c226be4-a054-4bd7-b0f1-1961b83a20c4" Panel.Bounds="0,0,375{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="17f9500d-95ac-40b9-9a5f-82c63a3d06b0">
+                            <Add.Item>
+                                <i:NavigationButton Text="Back" Foreground="#FF84312F" FontFamily="Open Sans" Id="20362b9b-95d7-447e-8672-682411ef009f" Panel.Bounds="5,12,68{40,2147483647},5*{5,2147483647}">
+                                    <i:NavigationButton.Click>
+                                        <CommandNavigate Screen="/Home.screen" Created="12/02/2018 09:00:45" Id="31d53e4d-f43d-47bf-a430-92fecb6ac928">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </i:NavigationButton.Click>
+                                </i:NavigationButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="17f9500d-95ac-40b9-9a5f-82c63a3d06b0">
+                            <Add.Item>
+                                <i:ContentList Direction="Vertical" Thickness="0" Id="fad3b132-7080-4fba-bd10-4d88c941888e" Panel.Bounds="0,70,375{5,2147483647},577{5,2147483647}">
+                                    <i:ContentList.Template>
+                                        <Template Id="cfe79439-cb0f-4d70-963f-e69ab84c3260">
+                                            <Template.Content>
+                                                <ListItemContent Color="#FFFFFFFF" Thickness="0" Padding="0" Id="68fb1083-55ee-48e0-99b5-48be2a423fe1" Panel.Bounds="0,0,0*,96" Panel.Layout="Stretch">
+                                                    <ListItemContent.Content>
+                                                        <Container ClipToContainer="True" Id="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Container.Children>
+                                                                <i:Label RichText="Indigo Studio" Foreground="#FF000000" FontSize="17" FontStyle="Bold" Id="be524886-d91f-4210-8a57-2858abd3c46f" Panel.Bounds="73,7,0*,0*" />
+                                                                <Ellipse Thickness="0" Background="#FF0070FF" Id="cc06a2bc-9814-4b40-b9ec-491cc79caaa1" Panel.Bounds="54,13,12,12" />
+                                                                <Icon CatalogId="iOS 7 Contacts" Id="b334f088-e9cc-43a7-9cd2-f85e5f3227f3" Panel.Bounds="12,11,30,30" />
+                                                                <Icon Color="#FFCCCCCC" CatalogId="Greater Than" Id="4326fda8-5327-406c-9041-43f0188906cf" Panel.Bounds="352,15,13,13" />
+                                                                <i:Label RichText="Tuesday" Align="Right" Foreground="#FF8E8E8E" Id="c873e000-67a9-4ea9-8205-58421060d072" Panel.Bounds="264,11,80,18*" />
+                                                                <i:Label RichText="Subject line of the message" Foreground="#FF000000" Id="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" Panel.Bounds="53,30,0*,0*" />
+                                                                <i:Label RichText="First line of the message summary." Foreground="#FF8E8E8E" Id="8d253a6b-fb2f-4a11-a774-843a2df16ca4" Panel.Bounds="53,51,0*,0*" />
+                                                                <i:Label RichText="Second line of the message summary." Foreground="#FF8E8E8E" Id="4233b622-b1cb-40b1-8578-799927caac8f" Panel.Bounds="53,69,0*,0*" />
+                                                                <Line Thickness="1" Color="#FFE3E3E5" Id="b198d0a2-33eb-4ec2-ae31-5353fc7723ec" Panel.Bounds="53,0,322,3">
+                                                                    <Line.StartPoint>
+                                                                        <Point X="42" Id="6e2e4764-152c-4214-84aa-f30d4ea7d5be" />
+                                                                    </Line.StartPoint>
+                                                                    <Line.Segments>
+                                                                        <Segment Id="5362ce79-5c84-4ef7-bac7-46e5c3255a86">
+                                                                            <Segment.EndPoint>
+                                                                                <Point X="310" Id="a41f1ab6-1586-4c19-96de-e3a8ab268e79" />
+                                                                            </Segment.EndPoint>
+                                                                        </Segment>
+                                                                    </Line.Segments>
+                                                                </Line>
+                                                            </Container.Children>
+                                                        </Container>
+                                                    </ListItemContent.Content>
+                                                </ListItemContent>
+                                            </Template.Content>
+                                        </Template>
+                                    </i:ContentList.Template>
+                                    <i:ContentList.Items>
+                                        <ListItem Id="2e54da06-3546-4c84-94cf-695e8326eb00">
+                                            <ListItem.Content>
+                                                <SharedPart Id="b8d625c6-1305-4f8c-a16f-3909e27895e5">
+                                                    <SharedPart.Customizations>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Calories Today: 1715" Foreground="#FF84312F" Opacity="0.8" Id="0d5c88c5-855e-4158-b10d-89a21c70b2fb" Panel.Bounds="12,49,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Glucose average: 127 mg/dL" Foreground="#FF84312F" Opacity="0.8" Id="141a1641-52c6-4cf0-8751-1a9ecda12b02" Panel.Bounds="12,30,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Set Property="Label.RichText" Value="&lt;Run Foreground=&quot;#FF84312F&quot; &gt;Friday, November 30, 2018&lt;/Run&gt;" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Move To="12,4" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Move To="337,10" Target="4326fda8-5327-406c-9041-43f0188906cf" />
+                                                        <Set Property="Label.RichText" Value="Blood pressure: 113/76/65" Target="4233b622-b1cb-40b1-8578-799927caac8f" />
+                                                        <Set Property="Text.Foreground" Value="#FF84312F" Target="4233b622-b1cb-40b1-8578-799927caac8f" />
+                                                        <Set Property="Control.Opacity" Value="0.8" Target="4233b622-b1cb-40b1-8578-799927caac8f" />
+                                                        <Move To="12,67" Target="4233b622-b1cb-40b1-8578-799927caac8f" />
+                                                        <Set Property="Icon.Color" Value="#FF84312F" Target="4326fda8-5327-406c-9041-43f0188906cf" />
+                                                        <Remove Target="cc06a2bc-9814-4b40-b9ec-491cc79caaa1" />
+                                                        <Remove Target="b334f088-e9cc-43a7-9cd2-f85e5f3227f3" />
+                                                        <Remove Target="c873e000-67a9-4ea9-8205-58421060d072" />
+                                                        <Remove Target="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" />
+                                                        <Remove Target="b198d0a2-33eb-4ec2-ae31-5353fc7723ec" />
+                                                        <Remove Target="8d253a6b-fb2f-4a11-a774-843a2df16ca4" />
+                                                    </SharedPart.Customizations>
+                                                </SharedPart>
+                                            </ListItem.Content>
+                                            <ListItem.Click>
+                                                <CommandNavigate Screen="/Logpage.screen" Created="12/01/2018 22:30:00" Id="409f782f-e8b7-4eb7-ae3e-bb19930ece44">
+                                                    <CommandNavigate.Transition>
+                                                        <NavigateTransition Type="Push" Duration="300" />
+                                                    </CommandNavigate.Transition>
+                                                </CommandNavigate>
+                                            </ListItem.Click>
+                                        </ListItem>
+                                        <ListItem Id="c97575e8-33c0-4988-afa6-2c439859ebe0">
+                                            <ListItem.Content>
+                                                <SharedPart Id="0f33878c-2c6c-4a18-9669-6fb82eeb19ae">
+                                                    <SharedPart.Customizations>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="&lt;Run Foreground=&quot;#FF84312F&quot; &gt;Thursday, November 29, 2018&lt;/Run&gt;" Foreground="#FF000000" FontSize="17" FontStyle="Bold" Id="f462c06d-9395-4d5a-91ec-67e6968f2c1a" Panel.Bounds="12,4,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <Icon Color="#FF84312F" CatalogId="Greater Than" Id="cd88d6c9-ecee-4fb1-9348-7e0668899a1a" Panel.Bounds="337,10,13,13" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Glucose average: 127 mg/dL" Foreground="#FF84312F" Opacity="0.8" Id="370ea8f4-5620-4bfc-b765-4a69d6ed76ac" Panel.Bounds="12,29,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Blood pressure: 113/76/65" Foreground="#FF84312F" Opacity="0.8" Id="e654a06d-5264-4b01-b5bd-1718557f5481" Panel.Bounds="12,67,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Calories Today: 1550 kcal" Foreground="#FF84312F" Opacity="0.8" Id="c85a291c-29ec-4743-ae0d-68e7996171f6" Panel.Bounds="12,48,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Remove Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Remove Target="cc06a2bc-9814-4b40-b9ec-491cc79caaa1" />
+                                                        <Remove Target="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" />
+                                                        <Remove Target="8d253a6b-fb2f-4a11-a774-843a2df16ca4" />
+                                                        <Remove Target="4233b622-b1cb-40b1-8578-799927caac8f" />
+                                                        <Remove Target="c873e000-67a9-4ea9-8205-58421060d072" />
+                                                        <Remove Target="b334f088-e9cc-43a7-9cd2-f85e5f3227f3" />
+                                                        <Remove Target="4326fda8-5327-406c-9041-43f0188906cf" />
+                                                    </SharedPart.Customizations>
+                                                </SharedPart>
+                                            </ListItem.Content>
+                                        </ListItem>
+                                        <ListItem Id="be623713-15ca-451c-b223-ad212adfc697">
+                                            <ListItem.Content>
+                                                <SharedPart Id="041ff7c9-df0a-4051-8490-5a754f168267">
+                                                    <SharedPart.Customizations>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Glucose average: 135 mg/dL" Foreground="#FF84312F" Opacity="0.8" Id="34d212b7-a740-4e7f-85e2-6d03921cbff3" Panel.Bounds="12,32,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Blood pressure: 130/77/68" Foreground="#FF84312F" Opacity="0.8" Id="adf1257e-00d8-4447-af3d-7be58ef8ef4e" Panel.Bounds="12,70,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Calories Today: 1610 kcal" Foreground="#FF84312F" Opacity="0.8" Id="9076762b-cdbb-4acc-9a76-92900c184363" Panel.Bounds="12,51,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Set Property="Label.RichText" Value="Wednesday, November 28, 2018" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Set Property="Text.Foreground" Value="#FF84312F" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Move To="12,7" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Move To="337,15" Target="4326fda8-5327-406c-9041-43f0188906cf" />
+                                                        <Set Property="Control.Tooltip" Value="Click to view log" Target="68fb1083-55ee-48e0-99b5-48be2a423fe1" />
+                                                        <Set Property="Icon.Color" Value="#FF84312F" Target="4326fda8-5327-406c-9041-43f0188906cf" />
+                                                        <Remove Target="cc06a2bc-9814-4b40-b9ec-491cc79caaa1" />
+                                                        <Remove Target="b334f088-e9cc-43a7-9cd2-f85e5f3227f3" />
+                                                        <Remove Target="c873e000-67a9-4ea9-8205-58421060d072" />
+                                                        <Remove Target="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" />
+                                                        <Remove Target="8d253a6b-fb2f-4a11-a774-843a2df16ca4" />
+                                                        <Remove Target="4233b622-b1cb-40b1-8578-799927caac8f" />
+                                                    </SharedPart.Customizations>
+                                                </SharedPart>
+                                            </ListItem.Content>
+                                        </ListItem>
+                                        <ListItem Id="5ec53b10-ab42-4ea1-ba6a-3794c8ca7faf">
+                                            <ListItem.Content>
+                                                <SharedPart Id="5fa0fe80-f3dc-44fa-8666-5826c5b197c6">
+                                                    <SharedPart.Customizations>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Glucose average: 123 mg/dL" Foreground="#FF84312F" Opacity="0.8" Id="53394b60-2c77-493b-8b6f-bb5d623db1bd" Panel.Bounds="12,32,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Blood pressure: 114/75/61" Foreground="#FF84312F" Opacity="0.8" Id="42dbecb5-1747-46e8-aa1a-733e754769e2" Panel.Bounds="12,70,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Calories Today: 1510 kcal" Foreground="#FF84312F" Opacity="0.8" Id="47c1fb9f-f562-4982-8158-13c7cc07348c" Panel.Bounds="12,51,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Move To="12,7" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Set Property="Label.RichText" Value="Tueday, November 27, 2018" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Set Property="Text.Foreground" Value="#FF84312F" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Move To="336,13" Target="4326fda8-5327-406c-9041-43f0188906cf" />
+                                                        <Set Property="Icon.Color" Value="#FF84312F" Target="4326fda8-5327-406c-9041-43f0188906cf" />
+                                                        <Remove Target="b334f088-e9cc-43a7-9cd2-f85e5f3227f3" />
+                                                        <Remove Target="cc06a2bc-9814-4b40-b9ec-491cc79caaa1" />
+                                                        <Remove Target="8d253a6b-fb2f-4a11-a774-843a2df16ca4" />
+                                                        <Remove Target="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" />
+                                                        <Remove Target="4233b622-b1cb-40b1-8578-799927caac8f" />
+                                                        <Remove Target="c873e000-67a9-4ea9-8205-58421060d072" />
+                                                    </SharedPart.Customizations>
+                                                </SharedPart>
+                                            </ListItem.Content>
+                                        </ListItem>
+                                        <ListItem Id="6dd7f792-1180-4cf7-b919-b79573001c6c">
+                                            <ListItem.Content>
+                                                <SharedPart Id="d76b8fe8-f744-4fa6-8855-6feda20f5e11">
+                                                    <SharedPart.Customizations>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Blood pressure: 114/75/61" Foreground="#FF84312F" Opacity="0.8" Id="4b35ab18-9d96-4455-a7e4-f8ce5d33a2cc" Panel.Bounds="12,67,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <i:Label RichText="Calories Today: 1510 kcal" Foreground="#FF84312F" Opacity="0.8" Id="84397050-84f8-41cd-b063-f5d53ca62a5b" Panel.Bounds="12,48,0*,0*" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Add Property="Panel.Children" Target="30704a64-9387-4263-b98e-4fc13f21450e">
+                                                            <Add.Item>
+                                                                <Icon Color="#FF84312F" CatalogId="Greater Than" Id="9978a6b4-0005-4a9d-aaf0-e8d6448d365f" Panel.Bounds="336,12,13,13" />
+                                                            </Add.Item>
+                                                        </Add>
+                                                        <Set Property="Text.Foreground" Value="#FF84312F" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Set Property="Label.RichText" Value="Monday, November 26, 2018" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Move To="12,7" Target="be524886-d91f-4210-8a57-2858abd3c46f" />
+                                                        <Move To="12,30" Target="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" />
+                                                        <Set Property="Text.Foreground" Value="#FF84312F" Target="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" />
+                                                        <Set Property="Label.RichText" Value="Glucose average: 122 mg/dL" Target="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" />
+                                                        <Set Property="Control.Opacity" Value="0.8" Target="b3cc6cf0-cec9-4367-8b7d-d31cb16ad2f4" />
+                                                        <Remove Target="b334f088-e9cc-43a7-9cd2-f85e5f3227f3" />
+                                                        <Remove Target="cc06a2bc-9814-4b40-b9ec-491cc79caaa1" />
+                                                        <Remove Target="8d253a6b-fb2f-4a11-a774-843a2df16ca4" />
+                                                        <Remove Target="4233b622-b1cb-40b1-8578-799927caac8f" />
+                                                        <Remove Target="c873e000-67a9-4ea9-8205-58421060d072" />
+                                                        <Remove Target="4326fda8-5327-406c-9041-43f0188906cf" />
+                                                    </SharedPart.Customizations>
+                                                </SharedPart>
+                                            </ListItem.Content>
+                                        </ListItem>
+                                    </i:ContentList.Items>
+                                </i:ContentList>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="17f9500d-95ac-40b9-9a5f-82c63a3d06b0">
+                            <Add.Item>
+                                <i:SearchBar Text="November" WatermarkText="Search" Foreground="#FF84312F" FontFamily="Open Sans" Id="6e8f3045-8e3a-4126-855b-53485d6a49ed" Panel.Bounds="0,43,375{105,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

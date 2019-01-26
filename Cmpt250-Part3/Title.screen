@@ -1,0 +1,68 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="12.0.0.8"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                xmlns:d="http://prototypes.infragistics.com/views/design"
+                                                                                xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                Id="4f5f14e4-20ff-46a6-89ea-a075c405613d" d:Design.ShowOpeningAnimation="True">
+    <Page.Content>
+        <Content Width="375" Height="647" Id="e36f6e88-3b66-4a45-86a4-8ba0655a2f14">
+            <Content.Layers>
+                <Layer Id="bb0ad6d1-67a5-42d0-a931-8d349da46e0d" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="d5b06b05-24d2-4dfe-8be3-3fa206414a5c" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="375,647" Id="93f3b99b-7642-4d73-aeef-d39dcc8f152f" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="2578f5e4-458f-446c-a98e-3feb638ec463" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="11/30/2018 23:39:20" Id="df2308f9-3883-48a3-a9d6-7683e02f2a6b">
+            <Scene.KeyFrames>
+                <KeyFrame Duration="250" Id="535c82ea-56ff-416a-bc5d-916e2e957f8b">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="bb0ad6d1-67a5-42d0-a931-8d349da46e0d">
+                            <Add.Item>
+                                <Image SourcePath="assets/HeartPhoto.png" DevicePixelRatio="0.5" Crop="Size:[541.682242990654,355.020979020979],Rect:[90,0,364,355]" Id="b445712e-6030-43ef-85ad-7d4c46e107b0" Panel.Bounds="4,142,364{5,2147483647},316{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="bb0ad6d1-67a5-42d0-a931-8d349da46e0d">
+                            <Add.Item>
+                                <i:Title RichText="myDiabetes" Foreground="#FF830000" FontSize="36" FontFamily="Roboto" Id="7ad4371a-22ab-4c53-a4c1-2f69e9a12c09" Panel.Bounds="90,432,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="bb0ad6d1-67a5-42d0-a931-8d349da46e0d">
+                            <Add.Item>
+                                <i:ActivityIndicator Id="97083c3f-20d0-4b00-a1f7-8b4b5e9a598e" Panel.Bounds="170,494,35{20,2147483647},35{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Content.SceneApplied" Target="e36f6e88-3b66-4a45-86a4-8ba0655a2f14">
+                            <Add.Item>
+                                <ConditionalCommand Id="dc0f6321-3c9e-4f6b-ac13-35d4ef271088">
+                                    <ConditionalCommand.Command>
+                                        <CommandNavigate Screen="/Home.screen" Created="12/02/2018 07:58:57" Id="2a0d7482-6e71-44b1-9910-7ac85a65ecf0">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </ConditionalCommand.Command>
+                                    <ConditionalCommand.Condition>
+                                        <SceneCondition Scene="df2308f9-3883-48a3-a9d6-7683e02f2a6b" />
+                                    </ConditionalCommand.Condition>
+                                </ConditionalCommand>
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+                <KeyFrame Duration="250" Id="e8a8b19a-ddd5-466f-b496-f4272d56edfc" />
+                <KeyFrame Duration="250" Id="a205fc3d-fa07-4def-9251-852c02ba8db8" />
+                <KeyFrame Duration="250" Id="68c8018b-ffec-4cd0-849e-d0c7a6d93d41" />
+                <KeyFrame Duration="250" Id="0e616bc2-6b90-43b8-9fe1-71c5a49966fa" />
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

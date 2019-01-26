@@ -1,0 +1,93 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="12.0.0.8"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                Id="6e949779-da52-4521-9fd1-163629d84d89">
+    <Page.Content>
+        <Content Width="375" Height="647" Id="b0197fdf-891a-4b03-b497-8aba56edd964">
+            <Content.Layers>
+                <Layer Id="65fb4a1d-4379-4c17-a719-b452438f1ddf" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="43a1eb3e-f54f-4399-8f63-9e5d2a2d3a15" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="375,647" Id="abb42be3-fdab-43bf-8abc-988e63741956" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="4a651535-79b5-472a-a47d-118d804f8b51" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="11/30/2018 23:40:25" Id="1489d803-ac94-4826-81cf-86bbb2fd2460">
+            <Scene.KeyFrames>
+                <KeyFrame Id="a9195f9f-9b23-4650-b303-64a4d51318fd">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <Image SourcePath="assets/Phone BG1.jpg" DevicePixelRatio="0.5" Id="84f5bec1-ebf2-4a82-97a7-fe8de3df5569" Panel.Bounds="0,0,375{5,2147483647},647{5,2147483647}">
+                                    <Image.SwipeRight>
+                                        <CommandNavigate Screen="/Title.screen" Created="12/01/2018 00:42:10" Id="cd7734ac-6e61-4274-a33b-1550ca3756cf">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </Image.SwipeRight>
+                                </Image>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <i:Title RichText="&lt;Run FontSize=&quot;72&quot; &gt;2:36&lt;/Run&gt;&lt;Run FontSize=&quot;60&quot; &gt; &lt;/Run&gt;&lt;Run FontSize=&quot;36&quot; &gt;PM&#xD;&#xA;&lt;/Run&gt;&lt;Run FontSize=&quot;21&quot; &gt;Fri, November 30&lt;/Run&gt;" Foreground="#FFFFFFFF" FontSize="60" FontFamily="Source Sans Pro" Id="34fd27a8-93a5-4bce-9dbb-fda92368e32b" Panel.Bounds="107,29,253{5,2147483647},117*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <Image SourcePath="assets/lock-screen.png" DevicePixelRatio="0.5" Crop="Size:[312,554],Rect:[0,439,312,115]" Id="bdd989dd-36aa-4ac1-8040-a72820e2d755" Panel.Bounds="0,498,375{5,2147483647},149{5,2147483647}">
+                                    <Image.SwipeRight>
+                                        <CommandNavigate Screen="/Title.screen" Created="12/01/2018 18:15:12" Id="e27b7caa-e75d-48aa-99e4-5d11996fbcd3">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </Image.SwipeRight>
+                                </Image>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <Rectangle Color="#FFFFFFFF" Background="#00FFFFFF" Id="2410d2fc-f73c-4033-824a-f2cb7a15ad40" Panel.Bounds="-77,177,530{5,2147483647},100{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <Image SourcePath="assets/HeartPhoto.png" DevicePixelRatio="0.5" Id="eb9cd679-4ccc-484a-bb08-8209604e531e" Panel.Bounds="6,186,25{5,2147483647},25{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <i:Label RichText="myDiabetes" Foreground="#FFFFFFFF" FontSize="16" FontFamily="Source Sans Pro" Id="24a4e14c-050d-4057-a8e3-8590362d21ff" Panel.Bounds="41,188,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <i:Label RichText="1m ago" Foreground="#FFFFFFFF" FontSize="12" FontFamily="Source Sans Pro" Opacity="0.4" Id="ef0af477-b295-444f-9c06-1505aa3d539f" Panel.Bounds="126,191,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <i:Label RichText="&lt;Run Foreground=&quot;#FFFFFFFF&quot; &gt;Good afternoon! It has been 2 hours after your lunch break, It is now time to take your post-lunch recordings. &lt;/Run&gt;" FontFamily="Source Sans Pro" Id="13e5a36d-8ecb-4301-ad30-e787b52af53d" Panel.Bounds="41,211,341{5,2147483647},36*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="65fb4a1d-4379-4c17-a719-b452438f1ddf">
+                            <Add.Item>
+                                <i:Label RichText="&lt;Run FontSize=&quot;10&quot; Foreground=&quot;#FFFFFFFF&quot; &gt;slide to view&lt;/Run&gt;" FontFamily="Source Sans Pro" Opacity="0.4" Id="38568c4d-a85d-4ea4-a02d-6206fcedd707" Panel.Bounds="41,253,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

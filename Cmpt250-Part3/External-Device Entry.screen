@@ -1,0 +1,133 @@
+﻿<?Infragistics.Models format="xaml" version="30" appVersion="12.0.0.8"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                                                xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                Id="ef279310-0b45-4c57-b0cf-cb5f552cf585">
+    <Page.Content>
+        <Content Width="375" Height="647" Id="42f3e3e6-2e86-42e8-a908-0b3705fa69f1">
+            <Content.Layers>
+                <Layer Id="d8685086-f8d6-441c-8c87-384521d899ab" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="9690bd63-91dc-43b8-87ea-07a0f5ffaf11" Panel.Layout="Stretch" />
+            </Content.Layers>
+            <Content.Viewbox>
+                <Viewbox Size="375,647" Id="3215a76b-49a2-42af-b831-197b2e6ddce8" />
+            </Content.Viewbox>
+            <Content.GuidesInfo>
+                <GuidesInfo Id="7c0bb703-4500-491e-ad5e-41f9eae74abc" />
+            </Content.GuidesInfo>
+        </Content>
+    </Page.Content>
+    <Page.Device>
+        <DeviceInfo Id="iPhone6" Orientation="Portrait" />
+    </Page.Device>
+    <Page.Scenes>
+        <Scene Title="Start" Created="12/01/2018 01:51:21" Id="badf2380-b25c-43ec-8105-794c2938e0c5">
+            <Scene.KeyFrames>
+                <KeyFrame Id="2ac5cb29-2324-400b-84f1-06b229a96703">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <i:Header Text="External Device Entry" Foreground="#FF84312F" FontSize="16" FontFamily="Open Sans" Id="6d3054a1-f905-49d4-843c-9a7bf91e7fe5" Panel.Bounds="0,0,375{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <i:NavigationButton Text="Back" Foreground="#FF84312F" FontFamily="Open Sans" Id="d315140c-4f3f-4b91-bdd1-b03748d394f7" Panel.Bounds="5,12,68{40,2147483647},5*{5,2147483647}">
+                                    <i:NavigationButton.Click>
+                                        <CommandBack AnimateLastStateOnScreen="True" Created="12/01/2018 01:53:09" Id="af7ff1ce-812a-410a-97af-fd2415ecc08a" />
+                                    </i:NavigationButton.Click>
+                                </i:NavigationButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <i:ActionSheetButton ButtonType="Action" Text="Next" Foreground="#FF84312F" FontFamily="Open Sans" FontStyle="Bold" Opacity="0" Id="e3035cf6-d87d-49aa-bd09-7d5126ff78f0" Panel.Bounds="17,594,340{25,2147483647},44*{44,2147483647}">
+                                    <i:ActionSheetButton.Click>
+                                        <CommandNavigate Screen="/Reconfirm-External.screen" Created="12/02/2018 08:28:14" Id="de05de82-e571-4ef0-8de0-893fc74aeb67">
+                                            <CommandNavigate.Transition>
+                                                <NavigateTransition Type="Push" Duration="300" />
+                                            </CommandNavigate.Transition>
+                                        </CommandNavigate>
+                                    </i:ActionSheetButton.Click>
+                                </i:ActionSheetButton>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <Icon Color="#FF84312F" CatalogId="fa-bluetooth" Id="2cac81b1-8705-4738-acfa-7dd244e605fd" Panel.Bounds="17,60,50{5,2147483647},50{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <i:Label RichText="&lt;Run FontSize=&quot;13&quot; &gt;iHealth Smart - Wireless Glucose-Moni...&lt;/Run&gt;" Foreground="#FF84312F" FontSize="14" FontFamily="Open Sans" Id="80283aaf-a622-4db6-8ba6-d4b8ff9ed8da" Panel.Bounds="73,75,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <Icon Color="#FF84312F" CatalogId="fa-check" Id="68ceda21-95ec-44aa-88d4-0194bd17fbcd" Panel.Bounds="325,71,25{5,2147483647},25{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <Rectangle Id="8883b0a4-d55f-4150-bc1d-458df72761f8" Panel.Bounds="61,188,291{5,2147483647},153{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <i:ActivityIndicator Fill="#FF84312F" Opacity="0" Id="2d29bb2f-5bc7-469a-8c9a-9900269ba5ce" Panel.Bounds="188,236,35{20,2147483647},35{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <i:Label RichText="Retrieving data..." Foreground="#FF84312F" FontSize="11" FontFamily="Open Sans" Opacity="0" Id="22099931-e175-4c7a-aa30-c904ea7199ee" Panel.Bounds="163,273,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <Icon Color="#FF84312F" CatalogId="la-file" Id="f4583d36-669e-4d71-81e6-0d8b03846d24" Panel.Bounds="17,188,30{5,2147483647},30{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <i:Button TextAlignment="Left" Text="Retrieve data" Foreground="#FF84312F" FontSize="14" FontFamily="Open Sans" Id="6e96459e-409e-47de-ba54-a219aa57b493" Panel.Bounds="228,139,130{16,2147483647},30{16,2147483647}">
+                                    <i:Button.Click>
+                                        <CommandSwitchTo SceneId="e18d9422-ca35-4f1d-a639-8312f2f14775" Created="12/02/2018 08:34:17" Id="63ecb4b2-6cbf-4833-9c93-46f17c9976c5" />
+                                    </i:Button.Click>
+                                </i:Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab">
+                            <Add.Item>
+                                <i:Button TextAlignment="Left" Text="Search for devices" Foreground="#FF84312F" FontSize="14" FontFamily="Open Sans" Id="2b819a8f-b0e8-4d13-8306-124b9646d95e" Panel.Bounds="228,108,130{16,2147483647},30{16,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+        <Scene Title="Tapped Retrieve data" StateGroup="badf2380-b25c-43ec-8105-794c2938e0c5" ParentScene="badf2380-b25c-43ec-8105-794c2938e0c5" Created="12/02/2018 08:34:17" Id="e18d9422-ca35-4f1d-a639-8312f2f14775">
+            <Scene.KeyFrames>
+                <KeyFrame Duration="250" Id="d673c19c-567e-49ca-8a94-0a9faf2d4be4">
+                    <KeyFrame.Operations>
+                        <Set Property="Control.Opacity" Value="1" Target="2d29bb2f-5bc7-469a-8c9a-9900269ba5ce" />
+                        <Set Property="Control.Opacity" Value="0.8" Target="22099931-e175-4c7a-aa30-c904ea7199ee" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+                <KeyFrame Duration="250" Id="c79e57fc-0aa2-4965-83cb-de0b7e04c9d5" />
+                <KeyFrame Duration="250" Id="da6d9faf-47cc-440a-bbef-32b79d9090b5" />
+                <KeyFrame Duration="250" Id="36ed776a-d6e6-4617-bce0-8e4ecaf5bc3c">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="d8685086-f8d6-441c-8c87-384521d899ab" StartTimeMilliseconds="750">
+                            <Add.Item>
+                                <Icon Color="#FF84312F" CatalogId="fa-check" Id="30e28eff-5c3c-491b-8abf-74ba8a3dec23" Panel.Bounds="193,241,25{5,2147483647},25{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Control.Opacity" Value="0" Target="2d29bb2f-5bc7-469a-8c9a-9900269ba5ce" StartTimeMilliseconds="750" />
+                        <Set Property="Label.RichText" Value="Data retrieved, click next" Target="22099931-e175-4c7a-aa30-c904ea7199ee" StartTimeMilliseconds="750" />
+                        <Move To="143,271" Target="22099931-e175-4c7a-aa30-c904ea7199ee" StartTimeMilliseconds="750" />
+                        <Set Property="Control.Opacity" Value="1" Target="e3035cf6-d87d-49aa-bd09-7d5126ff78f0" StartTimeMilliseconds="750" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>
